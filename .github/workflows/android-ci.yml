@@ -106,6 +106,7 @@ jobs:
              echo "ZIPALIGNing APK..."
 
             
+             chmod +x $PROJ/app/build/outputs/apk/debug/app-debug.apk
              
              $ZIPALIGN -p -f -v 4 $PROJ/app/build/outputs/apk/debug/app-debug.apk $PROJ/app/build/outputs/apk/debug/app-debug-gradleonkotlin.apk 
                    
