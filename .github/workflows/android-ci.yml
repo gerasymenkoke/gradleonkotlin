@@ -108,7 +108,7 @@ jobs:
              
              echo "ZIPALIGNing APK..."
 
-             mkdir cd $PROJ/app/build/outputs/apk/debug
+          
              cd $PROJ/app/build/outputs/apk/debug
              tree -i
              
