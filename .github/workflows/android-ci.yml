@@ -80,7 +80,7 @@ jobs:
         
         
              PROJ="/home/runner/work/gradleonkotlin/gradleonkotlin"
-             ZIPALIGN="/usr/local/lib/android/sdk/build-tools/30.0.0/zipalign"
+             ZIPALIGN="/usr/local/lib/android/sdk/build-tools/31.0.0/zipalign"
              APKSIGNER="/usr/local/lib/android/sdk/build-tools/31.0.0/apksigner" 
              echo "Signing  APK...."
              cd /home/runner/work/gradleonkotlin/gradleonkotlin/
