@@ -78,7 +78,7 @@ jobs:
 
     
       - name: Build project
-        working-directory:  /home/runner/work/gradleonkotlin/gradleonkotlin/app/build/outputs/apk/debug/app-debug.apk
+        working-directory:  /home/runner/work/gradleonkotlin/gradleonkotlin/app/build/outputs/apk/debug
         run: |
              cd /home/runner/work/gradleonkotlin/gradleonkotlin
              ./gradlew build
