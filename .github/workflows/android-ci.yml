@@ -106,7 +106,7 @@ jobs:
              echo "ZIPALIGNing APK..."
 
              
-             cd $PROJ/app
+             cd $PROJ
              tree -i
              
              echo  "List of $PROJ/app/build/outputs/apk/debug   here above !!!"  
