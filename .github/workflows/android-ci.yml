@@ -76,11 +76,11 @@ jobs:
         
         
         
-             PROJ="/home/runner/work/HMI/HMI"
+             PROJ="/home/runner/work/gradleonkotlin/gradleonkotlin"
              ZIPALIGN="/usr/local/lib/android/sdk/build-tools/31.0.0/zipalign"
              APKSIGNER="/usr/local/lib/android/sdk/build-tools/31.0.0/apksigner" 
              echo "Signing  APK...."
-             cd /home/runner/work/HMI/HMI/
+             cd /home/runner/work/gradleonkotlin/gradleonkotlin/
              
              
              
@@ -101,8 +101,8 @@ jobs:
              
              
 
-             $APKSIGNER sign  --ks  SIGNING_KEY.jks   $PROJ/app/build/outputs/apk/debug/app-debug-hmi.apk   < PASSWORD.txt
-             $APKSIGNER verify -v  -v4-signature-file $PROJ/app/build/outputs/apk/debug/app-debug-hmi.apk.idsig $PROJ/app/build/outputs/apk/debug/app-debug-gradleonkotlin.apk  
+             $APKSIGNER sign  --ks  SIGNING_KEY.jks   $PROJ/app/build/outputs/apk/debug/app-debug-gradleonkotlin.apk   < PASSWORD.txt
+             $APKSIGNER verify -v  -v4-signature-file $PROJ/app/build/outputs/apk/debug/app-debug-gradleonkotlin.apk.idsig $PROJ/app/build/outputs/apk/debug/app-debug-gradleonkotlin.apk  
         
         
         
