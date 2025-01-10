@@ -30,6 +30,7 @@ jobs:
         run:  |
               chmod +x /home/runner/work/gradleonkotlin/gradleonkotlin
               mkdir -p /home/runner/work/gradleonkotlin/gradleonkotlin/app/build/outputs/apk/debug
+              chdir /home/runner/work/gradleonkotlin/gradleonkotlin
               chmod +x ./gradlew
 
 
@@ -78,6 +79,7 @@ jobs:
     
       - name: Build project
         run: |
+             chdir /home/runner/work/gradleonkotlin/gradleonkotlin
              ./gradlew build
         
         
