@@ -95,7 +95,11 @@ jobs:
              in  secret action " 
              xxd -p SIGNING_KEY.jks
              
-             # HEX - here, above !!!                
+             # HEX - SIGNING_KEY_64_JKS here above !!!                
+
+             xxd -p PASSWORD.txt
+             # HEX - PASSWORD_64 here above !!! 
+             
              
              echo "ZIPALIGNing APK..."
           
