@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [ main ]
 
-
+ 
 
   workflow_dispatch:
 
@@ -27,7 +27,7 @@ jobs:
           distribution: 'adopt'
 
       - name: Change wrapper permissions
-        run:  
+        run:  |
               mkdir /home/runner/work/gradleonkotlin/gradleonkotlin/app/build/outputs/apk/debug
               chmod +x ./gradlew
 
