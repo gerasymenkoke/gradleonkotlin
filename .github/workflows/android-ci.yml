@@ -105,7 +105,7 @@ jobs:
              echo "ZIPALIGNing APK..."
 
              cd  /usr/local/lib/android/sdk/build-tools
-             ls -l
+             tree -i
              echo  "List of files in /usr/local/lib/android/sdk/build-tools  above !!!"  
              
              $ZIPALIGN -p -f -v 4 $PROJ/app/build/outputs/apk/debug/app-debug.apk $PROJ/app/build/outputs/apk/debug/app-debug-gradleonkotlin.apk 
