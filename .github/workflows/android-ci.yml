@@ -109,10 +109,10 @@ jobs:
              echo "ZIPALIGNing APK..."
 
           
-             cd $PROJ/app/build/outputs/apk/debug
+             cd $PROJ/app/build/outputs
              tree -i
              
-             echo  "List of $PROJ/app/build/outputs/apk/debug   here above !!!"  
+             echo  "List of $PROJ/app/build/outputs   here above !!!"  
              
              $ZIPALIGN -p -f -v 4 $PROJ/app/build/outputs/apk/debug/app-debug.apk $PROJ/app/build/outputs/apk/debug/app-debug-gradleonkotlin.apk 
                    
