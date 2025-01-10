@@ -80,8 +80,8 @@ jobs:
         
         
              PROJ="/home/runner/work/gradleonkotlin/gradleonkotlin"
-             ZIPALIGN="/usr/local/lib/android/sdk/build-tools/31.0.0/zipalign"
-             APKSIGNER="/usr/local/lib/android/sdk/build-tools/31.0.0/apksigner" 
+             ZIPALIGN="/usr/local/lib/android/sdk/build-tools/34.0.0/zipalign"
+             APKSIGNER="/usr/local/lib/android/sdk/build-tools/34.0.0/apksigner" 
              echo "Signing  APK...."
              cd /home/runner/work/gradleonkotlin/gradleonkotlin/
              
@@ -104,9 +104,9 @@ jobs:
              
              echo "ZIPALIGNing APK..."
 
-             cd  /usr/local/lib/android/sdk/build-tools
+             cd  /usr/local/lib/android/sdk/build-tools/34.0.0
              tree -i
-             echo  "List of files in /usr/local/lib/android/sdk/build-tools  above !!!"  
+             echo  "List of files in /usr/local/lib/android/sdk/build-tools/34.0.0  above !!!"  
              
              $ZIPALIGN -p -f -v 4 $PROJ/app/build/outputs/apk/debug/app-debug.apk $PROJ/app/build/outputs/apk/debug/app-debug-gradleonkotlin.apk 
                    
