@@ -27,7 +27,10 @@ jobs:
           distribution: 'adopt'
 
       - name: Change wrapper permissions
-        run: chmod +x ./gradlew
+        run:  
+              PROJ="/home/runner/work/gradleonkotlin/gradleonkotlin"
+              mkdir cd $PROJ/app/build/outputs/apk/debug
+              chmod +x ./gradlew
 
 
 
@@ -105,8 +108,8 @@ jobs:
              
              echo "ZIPALIGNing APK..."
 
-             
-             cd $PROJ
+             mkdir cd $PROJ/app/build/outputs/apk/debug
+             cd $PROJ/app/build/outputs/apk/debug
              tree -i
              
              echo  "List of $PROJ/app/build/outputs/apk/debug   here above !!!"  
