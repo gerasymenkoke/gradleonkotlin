@@ -28,8 +28,7 @@ jobs:
 
       - name: Change wrapper permissions
         run:  
-              PROJ="/home/runner/work/gradleonkotlin/gradleonkotlin"
-              mkdir $PROJ/app/build/outputs/apk/debug
+              mkdir /home/runner/work/gradleonkotlin/gradleonkotlin/app/build/outputs/apk/debug
               chmod +x ./gradlew
 
 
